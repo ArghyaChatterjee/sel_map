@@ -1,19 +1,7 @@
 # sel_map (Semantic ELevation Map)
-**Authors:** Parker Ewen (pewen@umich.edu), Adam Li (adamli@umich.edu), Yuxin Chen (chyuxin@umich.edu), Steven Hong (hongsn@umich.edu), and Ram Vasudevan (ramv@umich.edu). 
-
-- All authors are affiliated with the Robotics Institute and department of Mechanical Engineering of the University of Michigan, 2505 Hayward Street, Ann Arbor, Michigan, USA.
-- This work is supported by the Ford Motor Company via the Ford-UM Alliance under award N022977, by the Office of Naval Research under award number N00014-18-1-2575, and in part by the National Science Foundation under Grant 1751093.
-- `sel_map` was developed in [Robotics and Optimization for Analysis of Human Motion (ROAHM) Lab](http://www.roahmlab.com/) at University of Michigan - Ann Arbor.
 
 ## Introduction
-<img align="right" height="230" src="/figures/main.png"/>
-
-Semantic ELevation (SEL) map is a semantic Bayesian inferencing framework for real-time elevation mapping and terrain property estimation. The package takes the inputs from RGB-D cameras and robot poses, and recursively estimates both the terrain surface profile and a probability distribution for terrain properties. The package can be deployed on a physical legged robotic platform in both indoor and outdoor environments. The semantic networks used in this package are modular and interchangeable, better performance can be achieved using the specific trained networks for the corresponding applications. This package provides several examples such as ResNet-50. The dataset for terrain friction can be found in [terrain_friction_dataset](https://github.com/roahmlab/terrain_friction_dataset) repository. The link to the project website is [here](https://roahmlab.github.io/sel_map/).
-
-
-<img height="270" src="/figures/flow_diagram.png"/>
-
-<img height="230" src="/figures/terrain_class.png"/> <img height="230" src="/figures/terrain_property.png"/>
+The dataset for terrain friction can be found in [terrain_friction_dataset](https://github.com/roahmlab/terrain_friction_dataset) repository. The link to the project website is [here](https://roahmlab.github.io/sel_map/).
 
 ## Dependencies
 The package is built on Ubuntu 20.04 with ROS Noetic Distribution, and the algorithms are compiled with C++11 and Python3. 
@@ -104,7 +92,7 @@ Before running the package, make sure you build the package successfully and sou
 
 - Launch the package with Spot demo using the following code.
 ```
-roslaunch sel_map spot_sel.launch
+roslaunch sel_map spot_bag_sel.launch
 ```
 
 - In another terminal, run the rosbag, which provides recorded data to the package.
